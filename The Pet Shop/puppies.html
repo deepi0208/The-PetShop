@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppies page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); -->
+</head>
+<body>
+  <nav class="navbar sticky-top bg-light fw-bold p-0">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="./images/logo.png" alt="Logo" width="100" height="100">
+    </a>
+    <ul class="nav justify-content-end bg-transparent text-body media">
+    <li class="nav-item px-1">
+      <a class="nav-link active text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Pets
+        </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+        <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+        <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+        <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+      </ul>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link active text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+      </li>
+    <li class="nav-item px-1">
+      <a class="nav-link text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+    </li>
+    <li class="nav-item px-1">
+      <a class="nav-link text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+    </li>
+    <li>
+      <a href="available_puppies.html">
+        <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+      </li>
+    </ul>
+    </div>
+    </nav><br>
+    <!-- content -->
+    <nav class="navbar fixed-top bg-light p-0">
+        <div class="container-fluid d-md-none">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="100" height="100">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-black">
+                <ul class="nav justify-content-end bg-transparent text-body d-block">
+                    <li class="nav-item px-1">
+                      <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pets
+                        </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+                        <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+                        <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+                        <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+                      </ul>
+                      </li>
+                      <li class="nav-item px-1">
+                        <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+                      </li>
+                    <li class="nav-item px-1">
+                      <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+                    </li>
+                    <li class="nav-item px-1">
+                      <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+                    </li>
+                    <li>
+                      <a href="available_puppies.html">
+                        <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+                      </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container text-center p-4">
+      <div class="row">
+        <div class="col">
+          <img src="./images/pet.jpg" class="image rounded-5" alt="..." height="400px" width="450px">
+        </div>
+        <div class="col">
+          <h1 class="fw-bold display-3 text-center text-warning fst-italic fs-1">ABOUT OUR PUPPIES</h1>
+            <div class="text-center">
+            <img src="./images/orangecollar-removebg-preview.png" class="media">
+        </div><br>
+            <p class="fw-medium"><em>Come in and play. Fall in Love. Have fun and relax, knowing we are always here for you. The Pet Shop is your local family owned and operated pet shop for over 48 years. We believe the human bond between humans and animals is a remarkable gift. That’s why we have been dedicated to matching 1000’s of families with the right pets since day one.</em></p>
+            <p class="fw-medium"><em>All Pet Shop puppies are bred as companion pets and are not meant to be used for specialty functions such as breeding, showing, guarding, or hunting.</em></p><br>
+            <div class="text-center">
+              <button type="button" class="btn btn-info btn-lg rounded-5">View warranty</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-info p-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1 class="fs-1 text-white fw-bold text-center">WHERE DO WE GET OUR PUPPIES?</h1><br><br>
+        <p class="fw-medium"><em>Most animal rights/welfare organizations apply the term “puppy mill” (sub-standard kennel) in association with pet stores. This is a non legal inflammatory term developed solely by these organizations. Unfortunately, most people are unsure of the difference between a “puppy mill” and a regulated professional breeder. A regulated professional breeder, is licensed and inspected by the federal government and must follow specific guidelines as it relates to care, nutrition, exercise, housing, and more. They are also subject to unannounced inspections by the USDA.</em></p>
+        <p class="fw-medium"><em>The Pet Shop purchases its puppies from USDA federally regulated, licensed, inspected and approved breeders in the U.S. These breeders may also have been inspected by state licensing bureaus with veterinarian oversight. We may also purchase from private “hobby breeders” who may have a litter of puppies at home that they wish to sell. Our purchasing priority is from breeders who are certified under the “Canine Certified Care” program developed by the Purdue University College of VeterinaryMedicine. Please read more about this ground breaking breeder education and standards program under “Our Puppy Pledge”</em></p>
+        </div>
+        <div class="col">
+          <img src="./images/puppy-removebg-preview.png" class="image pt-5">
+        </div>
+      </div>
+    </div>
+    </div>
+    
+        <div class="p-5 bg-info bg-opacity-10 border border-info border-start-0 rounded-end m-5">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                    <h1 class="fw-bold display-3 text-center text-warning fst-italic fs-1">OUR PROMISE TO YOU</h1>
+                  </div><br>                 
+                <div class="text-center">
+                    <img src="./images/orangecollar-removebg-preview.png" class="media"><br><br>
+                    </div>
+                  <p class="card-text text-primary fw-bold"><em>BUYING A PUPPY CAN BE THE MOST JOYFUL EXPERIENCE OF YOUR LIFE. THAT’S WHY OUR PUPPIES MEET THE FOLLOWING STANDARDS:</em></p>
+                  <p class="card-text text-primary fw-bold"><em>1. WE FEED HIGH QUALITY FOOD</em></p>
+                  <p class="card-text text-primary fw-bold"><em>2. WE WEIGH AND TAKE OUR PUPPIES TEMPERATURE REGULARLY</em></p>
+                  <p class="card-text text-primary fw-bold"><em>3. OUR PUPPIES ARE SOCIALIZED WITH  ADULTS AND CHILDREN AS WELL AS THEIR PLAYMATES</em></p>
+                 <p class="fw-medium"><i class="bi bi-dot"></i> <em>All of our Pet Shop puppies receive all required vaccinations and worming treatments during their stay with us.</em>
+                </p> 
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>All Pet Shop puppies come with a comprehensive health, hereditary, and life warranty.</em></p>
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>The Pet Shop has dedicated and trained kennel technicians whose only job is to ensure that all kennels follow a thorough daily maintenance and health schedule.</em></p>
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>All Pet Shop puppies are treated with compassion and respect by all of our team members who love working with our pets.</em></p>
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>All Pet Shop puppies receive the appropriate amount of daily exercise as per our veterinarians certified exercise plan.</em></p>
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>All Pet Shop puppies are bred as companion pets and are not meant to be used for specialty functions such as breeding, showing, guarding, or hunting.</em></p>
+                <p class="fw-medium"><i class="bi bi-dot"></i> <em>The Pet Shop also offers re-homing assistance should that ever be necessary in the future.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="bg-info text-center text-lg-start">
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="https://mdbootstrap.com/">The Pet Shop</a>
+            <div class="p-2">
+            <a
+              data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-facebook"></i></a>
+        
+              <!-- Twitter -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #55acee;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-twitter"></i></a>
+        
+              <!-- Google -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-google"></i></a>
+        
+              <!-- Instagram -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #ac2bac;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-instagram"></i></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-linkedin"></i></a>
+              <!-- Github -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1 rounded-5"
+                style="background-color: #333333;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

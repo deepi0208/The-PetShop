@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>available puppies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar sticky-top bg-light fw-bold p-0">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="./images/logo.png" alt="Logo" width="100" height="100">
+    </a>
+    <ul class="nav justify-content-end bg-transparent text-body media">
+    <li class="nav-item px-1">
+      <a class="nav-link active text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Pets
+        </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+        <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+        <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+        <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+      </ul>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link active text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+      </li>
+    <li class="nav-item px-1">
+      <a class="nav-link text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+    </li>
+    <li class="nav-item px-1">
+      <a class="nav-link text-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+    </li>
+    <li>
+      <a href="available_puppies.html">
+        <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+      </li>
+    </ul>
+    </div>
+    </nav><br>
+    <!-- content -->
+    <nav class="navbar fixed-top bg-light p-0">
+        <div class="container-fluid d-md-none">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="100" height="100">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-black">
+                <ul class="nav justify-content-end bg-transparent text-body d-block">
+                    <li class="nav-item px-1">
+                      <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pets
+                        </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+                        <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+                        <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+                        <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+                      </ul>
+                      </li>
+                      <li class="nav-item px-1">
+                        <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+                      </li>
+                    <li class="nav-item px-1">
+                      <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+                    </li>
+                    <li class="nav-item px-1">
+                      <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+                    </li>
+                    <li>
+                      <a href="available_puppies.html">
+                        <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+                      </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <h1 class="fw-bold display-3 text-center text-warning fst-italic pt-1">AVAILABLE PUPPIES</h1>
+            <div class="text-center">
+            <img src="./images/orangecollar-removebg-preview.png" class="media">
+    <h1 class="fw-bold display-3 text-center text-info fst-italic fs-1 pb-2">THE PET SHOP</h1>
+    <p class="text-center fw-bold"><em>PALMER PARK MALL, EASTON PA, 18042<br>PA LICENSE #4301</em></p>
+    <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card m-4 bg-info" style="width: 18rem;">
+          <img src="https://thepetshopinc.com/wp-content/uploads/2023/12/Cockapoo-M-3059-Donner-.jpeg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <p class="card-text fw-bold fs-5">COCKAPOO 2ND GEN MALE DONNER 3059</p>
+            <p class="fw-bold"><em>Location: Easton PA Description: Hybrid Cocker Spaniel/ Poodle- Avg.</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-4 bg-info" style="width: 18rem;">
+          <img src="https://thepetshopinc.com/wp-content/uploads/2024/01/20240102_171247-e1709921703783-1536x1240.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+              <p class="card-text fw-bold fs-5">AMERICAN ESKIMO 3087- PETEY MALE</p>
+            <p class="fw-bold"><em>Location: Easton PA Description:Avg.16” Avg.25#. Breed : American Eskimo</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-4 bg-info" style="width: 18rem;">
+          <img src="https://thepetshopinc.com/wp-content/uploads/2024/01/IMG_7746-rotated.jpg" class="card-img-top" alt="..." width="250" height="270">
+          <div class="card-body">
+              <p class="card-text fw-bold fs-5">WEST HIGHLAND TERRIER MALE CLIFFORD 3122</p>
+              <p class="fw-bold"><em>Location: Easton PA Description: Avg. 12# Avg. 24#. Breed</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/03/20240326_154750-1536x1536.jpg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">BOSTON TERRIER~RANGER~ 3198 MALE</p>
+            <p class="fw-bold"><em>Location: Easton PA Avg. 14” Avg. 20# call our</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/03/20240326_155746-1536x1536.jpg" class="card-img-top" alt="..." width="250" height="230">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">MINI BERNADOODLE~RIZZO~ 3201 FEMALE</p>
+            <p class="fw-bold"><em>Location: Easton PA Hybrid Mini bernadoodle/ Mini Poodle Avg.20″</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/03/20240326_155859-1536x1536.jpg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">COTON DE TULEAR~ECLIPSE~ 3199 MALE</p>
+            <p class="fw-bold"><em>Location: Easton PA Avg. 11″ Avg. 13# call our</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card m-4 bg-info" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/01/IMG_7737-rotated.jpg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">POMERANIAN FEMALE CHIP 3132</p>
+            <p class="fw-bold"><em>Location: Easton PA Description: Avg. 12” Avg. 10 #</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-info" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/02/20240220_161055-scaled-e1708468703664.jpg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">POMERANIAN FEMALE CHIP 3132</p>
+            <p class="fw-bold"><em>Location: Easton PA Description: Avg. 12” Avg. 10 #</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-info" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/02/IMG_9773-1536x1461.jpeg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">WEST HIGHLAND TERRIER MALE CLIFFORD 3122</p>
+            <p class="fw-bold"><em>Location: Easton PA Description: Avg. 12# Avg. 24#. Breed</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/01/IMG_7748-rotated.jpg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+          <p class="card-text fw-bold fs-5">COCKAPOO 2ND GEN MALE DONNER 3059</p>
+          <p class="fw-bold"><em>Location: Easton PA Description: Hybrid Cocker Spaniel/ Poodle- Avg.</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/02/IMG_9784.jpeg" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">AMERICAN ESKIMO 3087- PETEY MALE</p>
+          <p class="fw-bold"><em>Location: Easton PA Description:Avg.16” Avg.25#. Breed : American Eskimo</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card m-4 bg-warning" style="width: 18rem;">
+        <img src="https://thepetshopinc.com/wp-content/uploads/2024/02/IMG_9773-1536x1461.jpeg" class="card-img-top" alt="..." width="250" height="270">
+        <div class="card-body">
+            <p class="card-text fw-bold fs-5">WEST HIGHLAND TERRIER MALE CLIFFORD 3122</p>
+            <p class="fw-bold"><em>Location: Easton PA Description: Avg. 12# Avg. 24#. Breed</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+            <footer class="bg-info text-center text-lg-start">
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2024 Copyright:
+                  <a class="text-body" href="https://mdbootstrap.com/">The Pet Shop</a>
+                  <div class="p-2">
+                  <a
+                    data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #3b5998;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-facebook"></i></a>
+              
+                    <!-- Twitter -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #55acee;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-twitter"></i></a>
+              
+                    <!-- Google -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #dd4b39;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-google"></i></a>
+              
+                    <!-- Instagram -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #ac2bac;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-instagram"></i></i
+                    ></a>
+              
+                    <!-- Linkedin -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #0082ca;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1 rounded-5"
+                      style="background-color: #333333;"
+                      href="#!"
+                      role="button"
+                      ><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </footer>
+</body>
+</html>

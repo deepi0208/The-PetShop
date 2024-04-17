@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <video autoplay loop muted plays-inline>
+        <source src="images/petvideo.mp4" type="video/mp4">
+    </video>  
+<nav class="navbar fw-bold p-0">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">
+<img src="./images/logo.png" alt="Logo" width="100" height="100">
+</a>
+<ul class="nav justify-content-end bg-transparent text-body media">
+<li class="nav-item px-1">
+  <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Pets
+    </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+    <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+    <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+    <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+  </ul>
+  </li>
+  <li class="nav-item px-1">
+    <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+  </li>
+<li class="nav-item px-1">
+  <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+</li>
+<li class="nav-item px-1">
+  <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+</li>
+<li>
+  <a href="available_puppies.html">
+    <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+  </li>
+</ul>
+</div>
+</nav><br><br>
+<!-- content -->
+<nav class="navbar fixed-top bg-light p-0">
+    <div class="container-fluid d-md-none">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Logo" width="100" height="100">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-black">
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-black">
+            <ul class="nav justify-content-end bg-transparent text-body d-block">
+                <li class="nav-item px-1">
+                  <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pets
+                    </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item fw-bold" href="puppies.html"><img src="./images/pup.png" width="50" height="50"> Puppies</a></li>
+                    <li><a class="dropdown-item fw-bold" href="kittens.html"><img src="./images/kit.png" width="50" height="50"> Kittens</a></li>
+                    <li><a class="dropdown-item fw-bold" href="bunnies.html"><img src="./images/bun.png" width="50" height="50"> Bunnies</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#"><img src="./images/tips.png" width="50" height="50"> Puppy Tips</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item px-1">
+                    <a class="nav-link active text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" aria-current="page" href="healthwarrenties.html">Health Warranties</a>
+                  </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="employment.html">Employements</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link text-white link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="contact.html">contact</a>
+                </li>
+                <li>
+                  <a href="available_puppies.html">
+                    <button type="button" class="btn btn-warning fw-bold data-bs-toggle:popover">AVAILABLE PUPPIES</button></a>
+                  </li>
+              </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav><br><br><br>
+<h1 class="fw-bold display-3 text-center text-warning fst-italic">Meet Your New</h1>
+<div class="heading">
+<h1 class="display-3 text-center text-white fst-italic">BestFriend <img src="./images/collar-divider-blue.png"height="50px" width="70px"></h1></div><br>
+<p class="link-light text-center"><em>With over 80 breeds of puppies, you are sure to find your new furry friend!</em></p><br>
+<div class="text-center">
+  <a href="available_puppies.html">
+    <button type="button" class="btn btn-info btn-lg rounded-5">View All Puppies</button></a>
+</div></div>
+    <div class="fs-1 d-flex justify-content-end pt-3 sticky-top"><a href="Home.html"><i class="bi bi-arrow-up-circle-fill"></i></a></div>
+    <h1 class="fw-bold display-3 text-center text-warning fst-italic">THE PETSHOP STORY <img src="./images/collar-divider-blue.png" height="50px" width="70px"></h1>
+            <h1 class="display-3 text-center text-primary fst-italic fs-4 fw-bold text-opacity-50">get to know us more </h1><br>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img src="./images/pet1.jpg" class="image rounded-5" alt="...">
+        </div>
+        <div class="col p-4">
+            <p class="fw-bold"><em>The need for a different kind of pet store inspired our founder to create The Pet Shop in 1975. His vision was to put the health and happiness of all his pets first which created our company motto: “Animals First in All That We Do.” For 40 years we have been doing just that. We have grown into a full-line pet shop.</em></p>
+            <p class="fw-bold"><em>Our Pet Counselors all love what they do in caring for and handling all our pets. Many of whom started as customers prior to coming to work for us. Everyone has taken our exclusive training and testing program and will love answering any of your pet questions.</em></p><br>
+            <div class="text-center">
+              <a href="available_puppies.html">
+            <button type="button" class="btn btn-info btn-lg rounded-5">View All Puppies</button></a>
+        </div>
+      </div>
+    </div>
+    </div><br><br>
+      <div class=" bg-info p-5">
+      <h1 class="fs-1 text-white fw-bold text-center">OUR CORE VALUES</h1><div class="text-center"><img src="./images/orange-collar.png" height="45px" width="60px"></div><br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./images/foot.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">CHERISH & NURTURE</h5>
+              <p class="card-text text-center"><em>Provide a healthy and happy environment for pets where love and compassion are the foundation for their care.</em><br><br></b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/foot.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">BE THE TRUSTED EXPERT</h5>
+              <p class="card-text text-center"><em>Listen with care, answer with knowledge, and act with integrity.</em><br><br><br></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/foot.png" width="10" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">FOSTER THE BOND</h5>
+              <p class="card-text text-center"><em>A pet’s unconditional love is priceless & changes all our lives for the better. This is why we encourage all our guests of all ages to play with and enjoy the pets when they visit.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="bg-primary-subtle m-5">
+    <div class="container text-center">
+    <div class="row">
+      <div class="col">
+          <div class="card p-4 m-4">
+            <img src="./images/dog-orange.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold fs-3">PUPPIES</h5><br>
+              <div class="text-center">
+                <a href="puppies.html">
+              <button type="button" class="btn btn-light fw-bold rounded-5">View More <i class="bi bi-arrow-right-circle"></i></button>
+                </a>
+              </div>
+            </div> 
+      </div></div>
+      <div class="col">
+        <div class="card p-4 m-4">
+          <img src="./images/kitten-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold fs-3">KITTENS</h5><br>
+            <div class="text-center">
+              <a href="kittens.html">
+            <button type="button" class="btn btn-light fw-bold rounded-5">View More <i class="bi bi-arrow-right-circle"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card p-4 m-4">
+          <img src="./images/bunny-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold fs-3">BUNNY</h5><br>
+            <div class="text-center">
+              <a href="bunnies.html">
+            <button type="button" class="btn btn-light fw-bold rounded-5">View More <i class="bi bi-arrow-right-circle"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div><br><br>
+    <div class="container text-center">
+    <div class="row">
+      <div class="col pt-5"><h1 class="display-3 text-center text-info fst-italic fs-4 fw-bold text-opacity-75">See why our customers love us</h1>
+        <h1 class="fw-bold display-3 text-center text-warning fst-italic">TESTIMONIALS <img src="./images/collar-divider-blue.png" height="50px" width="70px"></h1>
+      </div>
+      <div class="col p-5"><div id="demo" class="carousel slide w-70 h-70 p-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center text-info p-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fw-medium"><em>"Seldom do you get the opportunity to work with such knowledgeable, kind and helpful people. You should be proud of your team"</em></p>
+            <p class="fw-bold text-warning"><em>ANTHONY C.</em></p>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center text-info p-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            <p class="fw-medium"><em>"My new kitten, Peter, is very well socialized and is a delightful little kitten who loves to cuddle"</em></p>
+            <p class="fw-bold text-warning"><em>KATHLEEN S.</em></p>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center text-info p-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            <p class="fw-medium"><em>"I purchased 2 puppies from The Pet Shop over the years and they were both very healthy dogs. I would also like to add that this is the cleanest and most well kept pet shop in the area"</em></p>
+            <p class="fw-bold text-warning"><em>DONNA S.</em></p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+</div>
+</div>
+    </div><br><br>
+<div class="bg-info p-5 mt-5 mb-5">
+  <h1 class="fs-1 text-white fw-bold text-center">CRAZY ANIMAL FACTS…</h1>
+  <div class="text-center">
+    <img src="images/orange-collar.png" width="60" height="50">
+  </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col bg-light p-2 m-3 rounded-5 w-70 h-70"><p class="fw-medium"><img src="images/fact1.png"><br><em>HIPPO MILK IS PINK</em></p></div>
+        <div class="col bg-light p-2 m-3 rounded-5 w-70 h-70"><p class="fw-medium"><img src="images/fact2.png"><br><em>TURTLES CAN BREATHE THROUGH THEIR BUTTS</em></p></div>
+        <div class="col bg-light p-2 m-3 rounded-5 w-70 h-70"><p class="fw-medium"><img src="images/foot2.png"><br><em>PUPPIES ARE BORN BLIND, DEAF, AND TOOTHLESS</em></p></div>
+        <div class="col bg-light p-3 m-3 rounded-5 w-70 h-70"><p class="fw-medium"><img src="images/fact3.png"><br><em>A CROCODILE CANNOT STICK OUT ITS TOUNGUE</em></p></div>
+        <!-- <div class="col"><p class="fw-medium"><em>SNAKES ALWAYS KEEP THEIR EYES OPEN WHEN SLEEPING</em></p></div> -->
+      </div>
+      <div class="row">
+        <div class="col bg-light p-2 m-3 rounded-5"><p class="fw-medium"><img src="images/fact4.png"><br><em>YOU WON’T BELIEVE IT, BUT MOSQUITOS HAVE 47 TEETH</em></p></div>
+        <div class="col bg-light p-2 m-3 rounded-5"><p class="fw-medium"><img src="images/fact5.png"><br><em>A CAT CAN JUMP 5 TIMES AS HIGH AS IT IS TALL</em></p></div>
+        <div class="col bg-light p-2 m-3 rounded-5"><p class="fw-medium"><img src="images/fact6.png" class="p-2"><br><em>PUPPIES SLEEP 14 HOURS PER DAY UP TO 12 WEEKS OLD</em></p></div>
+        <div class="col bg-light p-2 m-3 rounded-5"><p class="fw-medium"><img src="images/fact7.png" class="p-1"><br><em>PARROTS ACTUALLY “NAME” THEIR CHILDREN WITH A SIGNATURE CALL</em></p>
+        <!-- <div class="col"><p class="fw-medium"><em>FLAMINGOS HAVE KNEES THAT CAN BEND BACKWARD</em></p> -->
+        </div>
+      </div>
+    </div></div>
+<br><br>
+  <footer class="bg-info text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">The Pet Shop</a>
+      <div class="p-2">
+      <a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-facebook"></i></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-twitter"></i></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-google"></i></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-instagram"></i></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-linkedin"></i></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
